@@ -1,0 +1,74 @@
+<!doctype html>
+<!--Contact page -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Ninner Food Rescue Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Ninner Food Rescue Hub</h1>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contact & Donations</h2>
+    <p>Questions, partnership inquiries, or donations — reach out!</p>
+
+    <form id="contact-form" novalidate>
+      <label for="c-name">Name *</label>
+      <input id="c-name" name="name" required>
+
+      <label for="c-email">Email *</label>
+      <input id="c-email" name="email" type="email" required>
+
+      <label for="subject">Subject *</label>
+      <select id="subject" required>
+        <option value="">Choose a subject</option>
+        <option>Volunteer inquiry</option>
+        <option>Partnership</option>
+        <option>Donation</option>
+        <option>Other</option>
+      </select>
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" minlength="10" rows="5" required></textarea>
+
+      <button class="btn" type="submit">Send</button>
+    </form>
+
+    <h3>FAQ</h3>
+    <div class="accordion" id="faq">
+      <button class="accordion-btn">How do I sign up?</button>
+      <div class="accordion-panel">Go to the Volunteer page and complete the sign-up form. You will receive confirmation on the page.</div>
+
+      <button class="accordion-btn">Can I bring friends?</button>
+      <div class="accordion-panel">Yes — volunteers are welcome to bring friends. Please have them sign up individually.</div>
+
+      <button class="accordion-btn">Where do donations go?</button>
+      <div class="accordion-panel">Donations support transportation and supply purchases to facilitate pickups.</div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-5"></span> Ninner Food Rescue Hub — UNCC Food Rescue Club</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

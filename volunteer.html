@@ -1,0 +1,76 @@
+<!doctype html>
+<!--
+Volunteer sign-up page with accessible form validation
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Volunteer — Ninner Food Rescue Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Ninner Food Rescue Hub</h1>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="volunteer.html" class="active">Volunteer</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Volunteer Sign-up</h2>
+    <p>Please fill out the short form below. Fields marked with * are required.</p>
+
+    <form id="volunteer-form" novalidate>
+      <label for="name">Full name *</label>
+      <input id="name" name="name" required>
+
+      <label for="email">Email *</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="phone">Phone *</label>
+      <input id="phone" name="phone" type="tel" pattern="\d{10}" placeholder="1234567890" required>
+
+      <label for="date">Date *</label>
+      <input id="date" name="date" type="date" required>
+
+      <label for="timeslot">Time slot *</label>
+      <select id="timeslot" name="timeslot" required>
+        <option value="">Select a slot</option>
+        <option>8:00 AM - 10:00 AM</option>
+        <option>11:00 AM - 1:00 PM</option>
+        <option>4:00 PM - 6:00 PM</option>
+      </select>
+
+      <label for="notes">Notes (optional)</label>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+
+      <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <div id="form-confirm" class="modal" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">×</button>
+        <div id="confirm-body"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-3"></span> Ninner Food Rescue Hub — UNCC Food Rescue Club</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

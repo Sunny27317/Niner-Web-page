@@ -1,0 +1,102 @@
+<!doctype html>
+<!--Events page -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Events — Ninner Food Rescue Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Ninner Food Rescue Hub</h1>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html" class="active">Events</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Upcoming Events</h2>
+    <p>Use the search box to filter events by name or location. Click an event row for details.</p>
+
+    <label for="search-events" class="visually-hidden">Search events</label>
+    <input id="search-events" placeholder="Search events (name, location)">
+
+    <div class="table-wrap">
+      <table id="events-table" class="events-table" aria-describedby="events-desc">
+        <caption id="events-desc">List of upcoming food rescue events</caption>
+        <thead>
+          <tr><th>Event</th><th>Date</th><th>Time</th><th>Location</th></tr>
+        </thead>
+        <tbody id="events-body">
+          <!-- Filled by JS -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- modal -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-content" role="document">
+        <button class="modal-close" aria-label="Close">×</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section">
+      <h3>Event Photos</h3>
+      <p>Click on any image to view larger version</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://placehold.co/300x200/2e8b57/white?text=Team+Work" 
+               alt="Volunteers working together at food rescue event" 
+               data-caption="Volunteers sorting and packing rescued food">
+        </div>
+        <div class="gallery-item">
+          <img src="https://placehold.co/300x200/4caf50/white?text=Food+Delivery" 
+               alt="Delivering food to community shelter" 
+               data-caption="Making deliveries to our partner shelters">
+        </div>
+        <div class="gallery-item">
+          <img src="https://placehold.co/300x200/388e3c/white?text=Campus+Event" 
+               alt="Campus food rescue event" 
+               data-caption="Weekly campus food collection event">
+        </div>
+        <div class="gallery-item">
+          <img src="https://placehold.co/300x200/2e7d32/white?text=Community+Outreach" 
+               alt="Community outreach program" 
+               data-caption="Engaging with the local community">
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="gallery-modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="gallery-modal-content">
+        <button class="gallery-modal-close" aria-label="Close modal">×</button>
+        <img id="gallery-modal-img" src="" alt="">
+        <div id="gallery-modal-caption" class="gallery-modal-caption"></div>
+        <button class="gallery-nav-btn prev" aria-label="Previous image">‹</button>
+        <button class="gallery-nav-btn next" aria-label="Next image">›</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-2"></span> Ninner Food Rescue Hub — UNCC Food Rescue Club</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

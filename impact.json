@@ -1,0 +1,49 @@
+{
+  "summary": {
+    "meals": 4320,
+    "partners": 6,
+    "volunteers": 120
+  },
+  "weekly": [
+    {
+      "week": "Wk -5",
+      "meals": 560
+    },
+    {
+      "week": "Wk -4",
+      "meals": 680
+    },
+    {
+      "week": "Wk -3",
+      "meals": 720
+    },
+    {
+      "week": "Wk -2",
+      "meals": 540
+    },
+    {
+      "week": "Wk -1",
+      "meals": 750
+    },
+    {
+      "week": "This week",
+      "meals": 1068
+    }
+  ],
+  "partners": [
+    "Hope Shelter",
+    "Community Kitchen", 
+    "Safe Haven",
+    "Bright Start",
+    "Unity House",
+    "Campus Pantry"
+  ],
+  "goals": {
+    "mealsTarget": 7500,
+    "mealsCurrent": 5760,
+    "volunteersTarget": 120,
+    "volunteersCurrent": 72,
+    "partnersTarget": 6,
+    "partnersCurrent": 5
+  }
+}

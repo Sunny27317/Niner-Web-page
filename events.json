@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Dining Hall Pickup \u2014 South",
+    "date": "2025-10-12",
+    "time": "8:00 AM",
+    "location": "South Dining Hall",
+    "description": "Collect surplus from South Dining Hall and deliver to Hope Shelter."
+  },
+  {
+    "name": "East Campus Shift",
+    "date": "2025-10-14",
+    "time": "11:00 AM",
+    "location": "East Dining",
+    "description": "Short shift to collect packaged meals and store them securely for pickup."
+  },
+  {
+    "name": "Weekend Drive",
+    "date": "2025-10-18",
+    "time": "4:00 PM",
+    "location": "Main Quad",
+    "description": "Special drive with extra volunteers; community outreach and pickup."
+  }
+]
